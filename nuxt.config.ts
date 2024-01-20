@@ -9,5 +9,12 @@ export default defineNuxtConfig({
   },
   pinia: {
     storesDirs: ['./stores/**']
-  }
+  },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    }
+  },
+  css: ['~/assets/css/main.css'],
 })
